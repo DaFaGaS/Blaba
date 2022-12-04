@@ -3,12 +3,25 @@ using namespace std;
 
 double my_pow(double num, unsigned int degree)
 {
-	double new_num = num;
-	for (int i = 1; i < degree; i++)
+	double result = 1;
+
+	if(degree < 0) 
 	{
-		new_num = new_num * num;
+	degree = -deg;
+		for(long i = 0; i < deg; i++) 
+		{
+			result *= num;
+		}
+		return 1 / result;
 	}
-	return new_num;
+	else 
+	{
+		for (long i = 0; i < deg; i++) 
+		{
+			result *= num;
+		}
+		return result;
+	}
 }
 
 int main()
