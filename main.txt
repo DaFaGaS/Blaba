@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+double my_pow(double num, unsigned int degree)
+{
+	double new_num = num;
+	for (int i = 1; i < degree; i++)
+	{
+		new_num = new_num * num;
+	}
+	cout << "\nFinal number: " << new_num;
+	return 0;
+}
+
+int main()
+{
+	double num;
+	double fin_num;
+	unsigned int degree;
+	cout << "Enter the number: ";
+	cin >> num;
+	cout << "Enter the number degree: ";
+	cin >> degree;
+	fin_num = my_pow(num, degree);
+	cout << "\nProgramm ended successfuly.";
+}
