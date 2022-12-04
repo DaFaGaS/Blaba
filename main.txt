@@ -8,8 +8,7 @@ double my_pow(double num, unsigned int degree)
 	{
 		new_num = new_num * num;
 	}
-	cout << "\nFinal number: " << new_num;
-	return 0;
+	return new_num;
 }
 
 int main()
@@ -22,5 +21,6 @@ int main()
 	cout << "Enter the number degree: ";
 	cin >> degree;
 	fin_num = my_pow(num, degree);
+	cout << "\nFinal number: " << fin_num;
 	cout << "\nProgramm ended successfuly.";
 }
